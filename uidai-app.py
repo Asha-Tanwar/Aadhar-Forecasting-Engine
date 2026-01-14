@@ -118,7 +118,7 @@ tab1, tab2, tab3, tab4 = st.tabs(
 with tab1:
     st.markdown("<div class='card'>", unsafe_allow_html=True)
 
-    district = st.selectbox("Select District", df[location_col].unique())
+    district = st.selectbox("Select State", df[location_col].unique())
     monthly = preprocess(df, district)
 
     fig = go.Figure()
@@ -264,4 +264,5 @@ Govt Demand Forecasting by Asha Kanwar <br>
 Same Insights • Different Depth • Explainable AI
 </p>
 """, unsafe_allow_html=True)
+
 
